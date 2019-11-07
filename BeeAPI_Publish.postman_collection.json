@@ -1,0 +1,1898 @@
+{
+	"variables": [],
+	"info": {
+		"name": "BeeAPI_Publish",
+		"_postman_id": "2658bc54-4d2a-35c2-837c-ebb2119229e8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Account",
+			"description": "",
+			"item": [
+				{
+					"name": "B-IF1-accountRegister",
+					"request": {
+						"url": "{{BASE_URL}}/BEEAPI/account/register",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "123456789fff",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"user2\",\r\n    \"email\":\"user2@gmail.com\",\r\n    \"phoneNumber\":\"0978467970\",\r\n    \"gender\":8\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF3-accountDelete",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/account?accountName=user2",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"account"
+							],
+							"query": [
+								{
+									"key": "accountName",
+									"value": "user2",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "123456789",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF2-accountRetrieve",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/account?accountName=user2",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"account"
+							],
+							"query": [
+								{
+									"key": "accountName",
+									"value": "user2",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "123456789",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Application",
+			"description": "",
+			"item": [
+				{
+					"name": "B-IF4-applicationRegister",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/application?appId={{APP_ID}}",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"application"
+							],
+							"query": [
+								{
+									"key": "appId",
+									"value": "{{APP_ID}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "123456789",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF5-applicationRetrieve",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/application?appId={{APP_ID}}",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"application"
+							],
+							"query": [
+								{
+									"key": "appId",
+									"value": "{{APP_ID}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "123456789",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF6-applicationDelete",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/application?appId=app.poc.03",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"application"
+							],
+							"query": [
+								{
+									"key": "appId",
+									"value": "app.poc.03",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "123456789",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Device",
+			"description": "",
+			"item": [
+				{
+					"name": "B-IF7-deviceIdsRegister",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/device/register?tenantId={{FROM_TENANT_ID}}&appKey={{APP_KEY}}",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"device",
+								"register"
+							],
+							"query": [
+								{
+									"key": "tenantId",
+									"value": "{{FROM_TENANT_ID}}",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "appKey",
+									"value": "{{APP_KEY}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "register|123456789",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"deviceIdList\":[\"1C88KFFR23\"]\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF8-deviceIdsUnregister",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/device/unregister?tenantId={{FROM_TENANT_ID}}&appKey={{APP_KEY}}",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"device",
+								"unregister"
+							],
+							"query": [
+								{
+									"key": "tenantId",
+									"value": "{{FROM_TENANT_ID}}",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "appKey",
+									"value": "{{APP_KEY}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "unregister|123456789",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"deviceIdList\":[\"1C88KFFR23\"]\r\n}\r\n\r\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF9-deviceListRetrieve",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/device/list?startTime=2017-09-28 00:00:00&endTime=2019-10-28 00:00:00&offset=0&limit=50",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"device",
+								"list"
+							],
+							"query": [
+								{
+									"key": "startTime",
+									"value": "2017-09-28 00:00:00",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "endTime",
+									"value": "2019-10-28 00:00:00",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "limit",
+									"value": "50",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "123456789",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF10-connectedDeviceListRetrieve",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/device/connected/info?startTime=2017-09-28 00:00:00&endTime=2019-10-28 00:00:00&offset=0&limit=60",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"device",
+								"connected",
+								"info"
+							],
+							"query": [
+								{
+									"key": "startTime",
+									"value": "2017-09-28 00:00:00",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "endTime",
+									"value": "2019-10-28 00:00:00",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "limit",
+									"value": "60",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "123456789",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF11-connectedDeviceNumberRetrieve",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/device/connected/number/count?startTime=2018-09-28 00:00:00&endTime=2019-10-28 00:00:00&tenantId={{FROM_TENANT_ID}}",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"device",
+								"connected",
+								"number",
+								"count"
+							],
+							"query": [
+								{
+									"key": "startTime",
+									"value": "2018-09-28 00:00:00",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "endTime",
+									"value": "2019-10-28 00:00:00",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "tenantId",
+									"value": "{{FROM_TENANT_ID}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "123456789",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF12-deviceStatusRegister",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/device/tracking?sessionId=11222233&duration=900&appKey={{APP_KEY}}",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"device",
+								"tracking"
+							],
+							"query": [
+								{
+									"key": "sessionId",
+									"value": "11222233",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "duration",
+									"value": "900",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "appKey",
+									"value": "{{APP_KEY}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "123456789",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"deviceIdList\":[\"11004084101MTVCN240D63C00553\",\"11004084101MTVCN240D63C00242\",\"11004084101MTVCN240D63C00126\"]\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF13-deviceStatusReregisterUpdate",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/device/tracking?sessionId=11222233&duration=900&appKey={{APP_KEY}}",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"device",
+								"tracking"
+							],
+							"query": [
+								{
+									"key": "sessionId",
+									"value": "11222233",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "duration",
+									"value": "900",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "appKey",
+									"value": "{{APP_KEY}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "123456789",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"deviceIdList\":[\"11004084101MTVCN240D63C00553\",\"11004084101MTVCN240D63C00242\",\"11004084101MTVCN240D63C00126\"]\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF14-trackingDeviceRegister",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/device/tracking/geofence?lat=21.0434906&lon=105.7867355&radius=1&duration=1800&appKey={{APP_KEY}}&sessionId=131231313131232",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"device",
+								"tracking",
+								"geofence"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "21.0434906",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "lon",
+									"value": "105.7867355",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "radius",
+									"value": "1",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "duration",
+									"value": "1800",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "appKey",
+									"value": "{{APP_KEY}}",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "sessionId",
+									"value": "131231313131232",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "123456789",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"geofence\":[\"21.0423691,105.7791824\",\"21.0423691,105.7791824\",\"21.0423691,105.7791824\"],\r\n   \"eventType\":3\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF15-trackingDeviceUnregister",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/device/tracking?sessionId=12345",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"device",
+								"tracking"
+							],
+							"query": [
+								{
+									"key": "sessionId",
+									"value": "12345",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "123456789",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF16-deviceDataRetrieve",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/device/data?tenantId={{FROM_TENANT_ID}}&deviceId={{DEVICE_ID}}&startTime=2018-12-19 03:30:48&endTime=2019-12-22 05:30:48&limit=100&offset=0&sort=creationTime desc",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"device",
+								"data"
+							],
+							"query": [
+								{
+									"key": "tenantId",
+									"value": "{{FROM_TENANT_ID}}",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "deviceId",
+									"value": "{{DEVICE_ID}}",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "startTime",
+									"value": "2018-12-19 03:30:48",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "endTime",
+									"value": "2019-12-22 05:30:48",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "limit",
+									"value": "100",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "fq",
+									"value": "extAddr:6066005685672191 AND humi:*",
+									"equals": true,
+									"description": "",
+									"disabled": true
+								},
+								{
+									"key": "fl",
+									"value": "humi,creationTime",
+									"equals": true,
+									"description": "",
+									"disabled": true
+								},
+								{
+									"key": "stats",
+									"value": "true",
+									"equals": true,
+									"description": "",
+									"disabled": true
+								},
+								{
+									"key": "stats.field",
+									"value": "humi",
+									"equals": true,
+									"description": "",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "creationTime desc",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "123456789",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF17-deviceDataLastestRetrieve",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/device/data/latest?deviceId={{DEVICE_ID}}",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"device",
+								"data",
+								"latest"
+							],
+							"query": [
+								{
+									"key": "deviceId",
+									"value": "{{DEVICE_ID}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "123456789",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF19-deviceInfoRetrieve",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/device/info?deviceId={{DEVICE_ID}}",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"device",
+								"info"
+							],
+							"query": [
+								{
+									"key": "deviceId",
+									"value": "{{DEVICE_ID}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "123456789",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF18-deviceDataLastestInRegionRetrieve",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/device/data/latest?type=location&radius=1000&point=21.04731,105.792137&limit=3&fq=deviceId:{{DEVICE_ID}}",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"device",
+								"data",
+								"latest"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "location",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "radius",
+									"value": "1000",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "point",
+									"value": "21.04731,105.792137",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "fq",
+									"value": "deviceId:{{DEVICE_ID}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "123456789",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF24-deviceRegistration",
+					"request": {
+						"url": "{{BASE_URL}}/BEEAPI/device/registration",
+						"method": "POST",
+						"header": [
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "333333333333",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "     {\r\n           \"clientAddress\": \"1.2.3.4.5\",\r\n           \"serviceId\": \"service2112313111\", \r\n            \"deviceId\": \"112212121121AA\"\r\n      }\r\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF25-deviceUnregistration",
+					"request": {
+						"url": "{{BASE_URL}}/BEEAPI/device/registration-HLLLDEUXHEX",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "333333333333",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF26-deviceRegistrationInfoEdit",
+					"request": {
+						"url": "{{BASE_URL}}/BEEAPI/device/registration",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "333333333333",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientAddress\": \"192.168.1.120\",\r\n  \"serviceId\": \"serviceF8BB\", \r\n  \"deviceId\": \"4C887951F8BB\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF20-deviceConfigurationCreate",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/device/configuration?appKey={{APP_KEY}}&deviceId={{DEVICE_ID}}",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"device",
+								"configuration"
+							],
+							"query": [
+								{
+									"key": "appKey",
+									"value": "{{APP_KEY}}",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "deviceId",
+									"value": "{{DEVICE_ID}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "1212121212121",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"config\": {\n\t\t\"name\":\"config_1\",\n\t\t\"value\":[\n   {\"logic\":1,\"condition\":[{\"name\":\"tmp01\", \"operator\":21, \"value\":\"30\", \"typeData\":1},{\"name\":\"time2\", \"operator\":2, \"value\":\"* 5-7 * * *\", \"typeData\":5}],\n   \"action\":[{\"name\":\"fan01\", \"value\":\"on\"}]\n   }\n ]\n\t}\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF21-deviceConfigurationRetrieve",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/device/configuration?appKey={{APP_KEY}}&deviceId={{DEVICE_ID}}&configName=config_1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"device",
+								"configuration"
+							],
+							"query": [
+								{
+									"key": "appKey",
+									"value": "{{APP_KEY}}",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "deviceId",
+									"value": "{{DEVICE_ID}}",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "configName",
+									"value": "config_1",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "1212121212121",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"config\": {\n\t\t\"name\":\"config_1\",\n\t\t\"value\":\"{\\\"string\\\":\\\"test_create\\\"}\"\n\t}\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF22-deviceConfigurationDelete",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/device/configuration?appKey={{APP_KEY}}&deviceId={{DEVICE_ID}}&configName=config_1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"device",
+								"configuration"
+							],
+							"query": [
+								{
+									"key": "appKey",
+									"value": "{{APP_KEY}}",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "deviceId",
+									"value": "{{DEVICE_ID}}",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "configName",
+									"value": "config_1",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "1212121212121",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF23-deviceConfigurationEdit",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/device/configuration?appKey={{APP_KEY}}&deviceId={{DEVICE_ID}}",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"device",
+								"configuration"
+							],
+							"query": [
+								{
+									"key": "appKey",
+									"value": "{{APP_KEY}}",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "deviceId",
+									"value": "{{DEVICE_ID}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "1212121212121",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"config\": {\n\t\t\"name\":\"config_1\",\n\t\t\"value\":[\n   {\"logic\":1,\"condition\":[{\"name\":\"tmp03\", \"operator\":21, \"value\":\"30\", \"typeData\":1},{\"name\":\"time2\", \"operator\":2, \"value\":\"* 5-7 * * *\", \"typeData\":5}],\n   \"action\":[{\"name\":\"fan01\", \"value\":\"on\"}]\n   }\n ]\n\t}\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF27-deviceCommandControl",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/device/command?appKey={{APP_KEY}}&deviceId={{DEVICE_ID}}",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"device",
+								"command"
+							],
+							"query": [
+								{
+									"key": "appKey",
+									"value": "{{APP_KEY}}",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "deviceId",
+									"value": "{{DEVICE_ID}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "1212121212121",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"command\": [{\r\n                        \"name\": \"ligh01\",\r\n                        \"value\":[\r\n\t{\r\n\t\t\"id\":\"ligh01\",\r\n\t\t\"v\":\"on\",\r\n\t\t\"type\": 3\r\n\t}\r\n]\r\n                }\r\n        ]\r\n} \r\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF28-deviceCommandListRetrive",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/command/list?deviceId={{DEVICE_ID}}",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"command",
+								"list"
+							],
+							"query": [
+								{
+									"key": "deviceId",
+									"value": "{{DEVICE_ID}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "1212121212121",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"command\": [{\r\n                        \"name\": \"bat den\",\r\n                        \"value\":\"batden1\"\r\n                }, {\r\n                        \"name\": \"bat quat\",\r\n                        \"value\": \"batquat1\"\r\n                }\r\n        ]\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF29-subscriptionCreate",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/subscription?appKey={{APP_KEY}}&deviceId={{DEVICE_ID}}",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"subscription"
+							],
+							"query": [
+								{
+									"key": "appKey",
+									"value": "{{APP_KEY}}",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "deviceId",
+									"value": "{{DEVICE_ID}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "1212121212121",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "B-IF30-subscriptionDetele",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/subscription?appKey={{API_KEY}}&deviceId=123456",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"subscription"
+							],
+							"query": [
+								{
+									"key": "appKey",
+									"value": "{{API_KEY}}",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "deviceId",
+									"value": "123456",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "1212121212121",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Discovery",
+			"description": "",
+			"item": [
+				{
+					"name": "B-IF31-deviceDiscovery",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/discovery?deviceId={{DEVICE_ID}}&appKey={{APP_KEY}}",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"discovery"
+							],
+							"query": [
+								{
+									"key": "deviceId",
+									"value": "{{DEVICE_ID}}",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "appKey",
+									"value": "{{APP_KEY}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "1212121212121",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"filter\":[\"battery\",\"memory\",\"mgmtCmd\",\"firmware\",\"deviceInfo\",\"latest\",\"node\"]\r\n\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "notification",
+			"description": "",
+			"item": [
+				{
+					"name": "B-IF32-notificationExecute",
+					"request": {
+						"url": {
+							"raw": "{{BASE_URL}}/BEEAPI/v1/notification?appKey={{APP_KEY}}",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"BEEAPI",
+								"v1",
+								"notification"
+							],
+							"query": [
+								{
+									"key": "appKey",
+									"value": "{{APP_KEY}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "api_key",
+								"value": "{{API_KEY}}",
+								"description": ""
+							},
+							{
+								"key": "from",
+								"value": "{{FROM_TENANT_ID}}",
+								"description": ""
+							},
+							{
+								"key": "requestId",
+								"value": "123456789",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"targetList\":[\"Scc8cb34371474a9b767b662bd667af17\",\"S5ab23d7f63622c11a10e7563078c99ec\"],\r\n   \"content\":\"Hello all123456789123\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
